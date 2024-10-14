@@ -1,0 +1,63 @@
+.certificate1{
+    background-color:  rgba(0, 255, 255, 0.115);
+    font-family: "Dancing Script", cursive;
+}
+.profile{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+.edu{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.skills{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.certificate{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.intern{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.project{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.portfolio{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/099/033/small/blue-bokeh-light-effect-background-design-illustration-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+
+}
+#profile2{
+    font-family: "Lugrasimo", cursive;
+    text-align: center;
+}
+.skills2{
+    font-family: "Lugrasimo", cursive;
+    text-align: center;
+}
+.edu1{
+    font-family: "Lugrasimo", cursive;
+    margin-left: 550px;
+
+}
+.profile1{
+    color: brown;
+}
+.img{
+    border-radius: 50%;
+    border-style: groove;
+}
+.bg-img{
+    background-image: url('images/css-pattern-by-magicpattern.png');
+}

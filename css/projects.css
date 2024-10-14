@@ -1,0 +1,26 @@
+
+.project{
+    
+}
+
+
+.heading{
+    font-style: italic;
+}
+.project1{
+    background-color: rgba(137, 43, 226, 0.153);
+    font-style: oblique;
+}
+
+.project2{
+    background-color: rgba(0, 0, 255, 0.192);
+    font-style: oblique;
+}
+
+.project-name{
+    color:brown;
+}
+
+.technologies{
+    color:blue;
+}

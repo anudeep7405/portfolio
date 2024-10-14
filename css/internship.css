@@ -1,0 +1,28 @@
+.heading{
+    
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+.intern1{
+    background-color:rgba(172, 255, 47, 0.071);
+    font-style: oblique;
+}
+
+.intern2{
+    background-color: rgba(173, 216, 230, 0.195);
+    font-style: oblique;
+}
+
+.company{
+    color: chocolate;
+}
+
+.project{
+    color:blue
+}
+.tenure{
+    color:darkmagenta;
+}
