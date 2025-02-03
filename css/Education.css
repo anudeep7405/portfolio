@@ -1,0 +1,61 @@
+/* Style for the main container */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: repeating-linear-gradient(
+        to bottom,
+        #000000 0%,
+        #222222 25%,
+        #333333 50%,
+        #222222 75%,
+        #000000 100%
+    );
+    
+}
+
+.box-container {
+    display: flex;
+    justify-content: center; /* Centers the box in the middle */
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* The box holding all education details */
+.box {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* Individual education divs */
+.box div {
+    border-bottom: 1px solid black; /* Light separator */
+    padding: 10px 0;
+}
+
+/* Remove border from last item */
+.box div:last-child {
+    border-bottom: none;
+}
+
+/* Styling for text */
+p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Centering text */
+.box div p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust width for small screens */
+    }
+}

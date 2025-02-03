@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: repeating-conic-gradient(#121212 0deg 25deg, #1e1e1e 25deg 50deg);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skills Section Container */
+.skills-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+/* Heading */
+.skills-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Skills List */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    list-style: none;
+}
+
+/* Individual Skill Box */
+.skill {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Hover Effect */
+.skill:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .skills-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .skill {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        width: 95%;
+    }
+
+    .skills-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    .skill:hover {
+        transform: none; /* Removes hover effect for mobile */
+    }
+}

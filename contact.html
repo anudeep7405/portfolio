@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css"> <!-- Link to external CSS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Left: Contact Information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out for any inquiries or collaborations.</p>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                 <span>9606395719</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                 <span>anudeep7405@gmail.com.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                 <span>Bengaluru, India</span>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a class="text-decoration" href="https://www.facebook.com/profile.php?id=61572564303329"><img src="images\sm1.png" width="30px"></a>
+                    <a class="text-decoration" href="https://www.linkedin.com/in/anudeep-thatapudi-3b4945259/"><img src="images\sm2.png" width="30px"></a>
+                    <a class="text-decoration" href="https://www.instagram.com/anudeep_341/"><img src="images\sm3.jpg" width="50px"></a>
+                    <a class="text-decoration" href="https://github.com/anudeep7405"><img src="images\sm4.png" width="30px"></a>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="http://localhost:3000/send" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" href="mailto:anudeep7405@gmail.com?subject=Hello&body=Hi%20there!" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

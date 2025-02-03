@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Certifications Section Container */
+.certifications-container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 50px auto;
+    background: linear-gradient(to right top, #a1c4fd1d, #c2e9fb); /* Stylish gradient */
+
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgb(0, 0, 0);
+    backdrop-filter: blur(6px); /* Glassmorphism effect */
+}
+
+/* Heading */
+.certifications-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout: Exactly 2 Columns per Row */
+.certifications-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Individual Certification Box */
+.certification {
+    background: linear-gradient(135deg, #fffffffc, #f3f9ff); /* Subtle gradient */
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #007bff; /* Blue highlight */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.certification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.certification h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+/* Paragraphs */
+.certification p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Strong Tag Styling */
+.certification p strong {
+    color:rgba(165, 42, 42, 0.659);
+}
+
+/* Add icons before paragraphs */
+.certification p::before {
+    content: "✔ ";
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Responsive Design: Switch to One Column on Smaller Screens */
+@media (max-width: 768px) {
+    .certifications-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .certifications-box {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .certification h3 {
+        font-size: 1rem;
+    }
+
+    .certification p {
+        font-size: 0.9rem;
+    }
+}

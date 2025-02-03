@@ -1,0 +1,137 @@
+/* General styling for the body */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: repeating-conic-gradient(
+        #000000 0deg 30deg,
+        #222222 30deg 60deg,
+        #444444 60deg 90deg,
+        #666666 90deg 120deg
+    );
+    background-attachment: fixed;
+}
+
+/* Container for all the internships */
+.internships-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+/* Styling for the box that holds multiple internship cards */
+.internships-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each individual internship box */
+.internship {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Title of the internship */
+.internship h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+/* Paragraph and list styling inside each internship */
+.internship p,
+.internship ul {
+    margin: 10px 0;
+    color: #555;
+}
+
+.internship ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.internship li {
+    margin-bottom: 5px;
+}
+
+/* Add a hover effect for each internship box */
+.internship:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transform: translateY(-5px);
+}
+
+/* Optional: Add a little style for the outer container */
+.internships-container {
+    border: 2px solid #ddd;
+}
+
+.intern {
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Adjustments for the heading inside .main */
+.main h3 {
+    line-height: 0.5;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .internships-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .internship {
+        padding: 15px;
+    }
+
+    .internship h3 {
+        font-size: 1.4rem;
+    }
+
+    .internship p,
+    .internship ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intern {
+        font-size: large;
+    }
+
+    .internships-container {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .internship {
+        padding: 10px;
+    }
+
+    .internship h3 {
+        font-size: 1.2rem;
+    }
+
+    .internship p,
+    .internship ul {
+        font-size: 0.85rem;
+    }
+
+    .internship:hover {
+        transform: none; /* Disable hover effect on small screens */
+    }
+}

@@ -1,0 +1,95 @@
+/* General styling for the body */
+body {
+    font-family:'poppins' Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: conic-gradient(
+  from 45deg,
+  rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0)
+);
+    background-size: cover; /* Makes sure the crack pattern covers the whole screen */
+    background-attachment: fixed; /* Keeps the pattern fixed while scrolling */
+    min-height: 100vh; /* Ensures the background covers the full height of the viewport */
+    color: white; /* Text color to contrast with the dark background */
+}
+
+
+/* Section for Projects */
+.projects {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    
+}
+
+/* Title of the Projects Section */
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container for the project cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Each project card */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%; /* Updated to take up 100% of the row */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+/* Title of the Project */
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+/* Paragraphs inside each project card */
+.project-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* List of Technologies used */
+.project-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.project-card li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.963);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Ensures 100% width even on smaller screens */
+    }
+}
